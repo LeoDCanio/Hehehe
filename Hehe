@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romantic Love</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to bottom, #ffafbd, #ffc3a0); /* Latar romantis */
+      font-family: Arial, sans-serif;
+    }
+    .heart {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background: red;
+      transform: rotate(-45deg);
+      margin: 0 auto;
+    }
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: red;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -50px;
+      left: 0;
+    }
+    .heart::after {
+      top: 0;
+      left: 50px;
+    }
+    .text {
+      text-align: center;
+      margin-top: 20px;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="heart"></div>
+    <div class="text">I Love You 💖</div>
+  </div>
+</body>
+</html>
